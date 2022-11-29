@@ -81,7 +81,7 @@ for District in Districts:
 
 
 fig, ax = plt.subplots()
-for District in Districts: # what kind of for loop makes sense?
+for District in Districts: 
  ax.add_patch(PolygonPatch(District.Coordinates, fc=District.HolcColor, ec='black', alpha=0.5, zorder=2 )) # add arguments here
  ax.autoscale()
  plt.rcParams["figure.figsize"] = (15,15)
